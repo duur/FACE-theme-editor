@@ -7,9 +7,6 @@ namespace HandleINI
 {
     public static class INI
     {
-
-
-
         /// <summary>
         /// 为INI文件中指定的节点取得字符串
         /// </summary>
@@ -24,10 +21,6 @@ namespace HandleINI
         private static extern int GetPrivateProfileString(string lpAppName, string lpKeyName, string lpDefault, StringBuilder lpReturnedString, int nSize, string lpFileName);
 
 
-
-
-
-
         /// <summary>
         /// 修改INI文件中内容
         /// </summary>
@@ -38,10 +31,6 @@ namespace HandleINI
         /// <returns>非零表示成功，零表示失败</returns>
         [DllImport("kernel32.dll")]
         private static extern int WritePrivateProfileString(string lpApplicationName, string lpKeyName, string lpString, string lpFileName);
-
-
-
-
 
 
         /// <summary>
@@ -61,9 +50,6 @@ namespace HandleINI
 
 
 
-
-
-
         /// <summary>
         /// 写INI文件值
         /// </summary>
@@ -80,9 +66,6 @@ namespace HandleINI
 
 
 
-
-
-
         /// <summary>
         /// 删除节
         /// </summary>
@@ -93,9 +76,6 @@ namespace HandleINI
         {
             return Write(section, null, null, filePath);
         }
-
-
-
 
 
 
@@ -113,9 +93,6 @@ namespace HandleINI
 
 
 
-
-
-
         /// <summary>
         /// 检查文件是否存在
         /// </summary>
@@ -128,9 +105,6 @@ namespace HandleINI
                 throw new ArgumentNullException("filePath");
             }
         }
-
-
-
 
 
     }

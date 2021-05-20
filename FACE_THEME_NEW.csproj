@@ -64,7 +64,7 @@
     <TargetZone>LocalIntranet</TargetZone>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>668.ico</ApplicationIcon>
@@ -102,12 +102,6 @@
     <Compile Include="formAbout.Designer.cs">
       <DependentUpon>formAbout.cs</DependentUpon>
     </Compile>
-    <Compile Include="formAdd.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formAdd.Designer.cs">
-      <DependentUpon>formAdd.cs</DependentUpon>
-    </Compile>
     <Compile Include="newFile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,9 +115,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formAbout.resx">
       <DependentUpon>formAbout.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="formAdd.resx">
-      <DependentUpon>formAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSlideSettings.resx">
       <DependentUpon>FormSlideSettings.cs</DependentUpon>
@@ -141,7 +132,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="app.manifest" />
-    <None Include="FACE_THEME_NEW_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

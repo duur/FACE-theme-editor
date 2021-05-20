@@ -35,8 +35,6 @@ namespace FACE_THEME_NEW
         public static string systemDrive;
         public static string fileName;
         public static string themeFilename;
-        //public static string selectedIcon;
-        //public static string selectedCursor;
         public static int newReturn;
         public static int colorAlpha;
         public static int colorRed;

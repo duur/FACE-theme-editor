@@ -61,9 +61,9 @@
             this.aboutText3.AutoSize = true;
             this.aboutText3.Location = new System.Drawing.Point(41, 72);
             this.aboutText3.Name = "aboutText3";
-            this.aboutText3.Size = new System.Drawing.Size(155, 12);
+            this.aboutText3.Size = new System.Drawing.Size(179, 12);
             this.aboutText3.TabIndex = 2;
-            this.aboutText3.Text = "By P&&Z&&S 大一年度项目作品";
+            this.aboutText3.Text = "By P && Z && S 大一年度项目作品";
             // 
             // Version
             // 
@@ -72,7 +72,7 @@
             this.Version.Name = "Version";
             this.Version.Size = new System.Drawing.Size(101, 12);
             this.Version.TabIndex = 3;
-            this.Version.Text = "v1.1 20200608 03";
+            this.Version.Text = "v1.1 20210520 01";
             this.Version.Click += new System.EventHandler(this.label1_Click_2);
             // 
             // aboutText4
@@ -88,7 +88,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(225, 143);
+            this.ClientSize = new System.Drawing.Size(244, 143);
             this.Controls.Add(this.aboutText4);
             this.Controls.Add(this.Version);
             this.Controls.Add(this.aboutText3);

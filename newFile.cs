@@ -74,7 +74,6 @@ namespace FACE_THEME_NEW
                         Files.currentSafeFile = Files.fileName + "_files";
                         Directory.CreateDirectory(Files.systemDrive + "\\ThemeFiles\\" + Files.currentSafeFile);
                         Files.currentFile = Files.systemDrive + "\\ThemeFiles\\" + Files.currentSafeFile;
-                        /*待添加*/
                     }
                     Dispose();
                 }
@@ -94,8 +93,14 @@ namespace FACE_THEME_NEW
                     Directory.CreateDirectory(Files.currentFile + "\\ThemeIcons");
                 }
                 //复制模板文件
-                File.Copy("Res\\Default.theme", Files.currentFile + "\\" + Files.fileName + ".theme");
-                File.Copy("Res\\1.jpg", Files.currentFile + "\\DesktopBackground\\1.jpg");
+                if(!File.Exists(Files.currentFile + "\\" + Files.fileName + ".theme"))
+                {
+                    File.Copy("Res\\Default.theme", Files.currentFile + "\\" + Files.fileName + ".theme");
+                }
+                if (!File.Exists(Files.currentFile + "\\DesktopBackground\\1.jpg"))
+                {
+                    File.Copy("Res\\1.jpg", Files.currentFile + "\\DesktopBackground\\1.jpg");
+                }
             }
             else
             {
